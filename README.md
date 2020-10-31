@@ -34,7 +34,7 @@
 | Column        | Type       | Options                        |
 | ------------- | ---------- | ------------------------------ |
 | name          | string     | null: false                    |
-| url           | string     |                                |
+| url           | text       |                                |
 | user          | references | null: false, foreign_key: true |
 | prefecture    | references | null: false, foreign_key: true |
 
@@ -50,7 +50,7 @@ image
 | Column        | Type       | Options                        |
 | ------------- | ---------- | ------------------------------ |
 | name          | string     | null: false                    |
-| url           | string     |                                |
+| url           | text       |                                |
 | user          | references | null: false, foreign_key: true |
 | prefecture    | references | null: false, foreign_key: true |
 
