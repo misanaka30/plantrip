@@ -16,6 +16,21 @@
 - has_many :places
 - has_many :pins
 
+
+## prefectures テーブル
+
+| Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| name   | string | null: false |
+
+### Association
+
+- has_many :prefecture_users
+- has_many :users, through: prefecture_users
+- has_many :places
+- has_many :pins
+
+
 ## prefecture_users テーブル
 
 | Column | Type       | Options                        |
