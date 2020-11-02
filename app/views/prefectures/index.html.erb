@@ -10,7 +10,7 @@
   <% current_user.prefectures.each do |prefecture| %>
     <div class="prefecture">
       <div class="prefecture-name">
-        <a href="#"><%= prefecture.name %></a>
+       <%= link_to prefecture.name, prefecture_places_path(prefecture)%>
       </div>
     </div>
   <% end %>
