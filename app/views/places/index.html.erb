@@ -1,0 +1,12 @@
+<%= link_to "行先を作成する", new_prefecture_place_path%>
+
+<div class="places">
+ <% @places.each do |place| %>
+    <div class="place-user">
+      <%= place.user.name %>
+    </div>
+    <div class ="place-name">
+      <%= link_to place.name, place.url%>
+    </div>
+  <% end %>
+</div>

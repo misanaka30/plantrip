@@ -5,5 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :prefecture_users
   has_many :prefectures, through: :prefecture_users
+  has_many :places
 
+  validates :name, presence: true
 end
