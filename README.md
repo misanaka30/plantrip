@@ -16,6 +16,21 @@
 - has_many :places
 - has_many :pins
 
+
+## prefectures テーブル
+
+| Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| name   | string | null: false |
+
+### Association
+
+- has_many :prefecture_users
+- has_many :users, through: prefecture_users
+- has_many :places
+- has_many :pins
+
+
 ## prefecture_users テーブル
 
 | Column | Type       | Options                        |
@@ -34,7 +49,7 @@
 | Column        | Type       | Options                        |
 | ------------- | ---------- | ------------------------------ |
 | name          | string     | null: false                    |
-| url           | string     |                                |
+| url           | text       |                                |
 | user          | references | null: false, foreign_key: true |
 | prefecture    | references | null: false, foreign_key: true |
 
@@ -50,7 +65,7 @@ image
 | Column        | Type       | Options                        |
 | ------------- | ---------- | ------------------------------ |
 | name          | string     | null: false                    |
-| url           | string     |                                |
+| url           | text       |                                |
 | user          | references | null: false, foreign_key: true |
 | prefecture    | references | null: false, foreign_key: true |
 
