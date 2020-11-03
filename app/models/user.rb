@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_many :prefecture_users
   has_many :prefectures, through: :prefecture_users
   has_many :places
+  has_many :pins
 
   validates :name, presence: true
 end
