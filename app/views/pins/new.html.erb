@@ -8,7 +8,7 @@
      </div>
 
     <div class="form-pin-name">
-    <%= f.text_field :name, class: 'form-pin', placeholder: 'タイトルを入力してください' %>
+    <%= f.collection_select(:title_id, Title.all, :id, :name, {}, {class:"title-select"}) %>
     </div>
    </div>
    

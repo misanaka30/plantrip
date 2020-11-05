@@ -17,7 +17,7 @@ class PinsController < ApplicationController
  private
 
   def pin_params
-    params.require(:pin).permit(:name, :url, :image).merge(user_id: current_user.id)
+    params.require(:pin).permit(:title_id, :image).merge(user_id: current_user.id)
   end
 
 
