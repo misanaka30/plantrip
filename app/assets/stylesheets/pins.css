@@ -13,7 +13,7 @@
    border: gray;
    padding: 15px;
    margin-left: 40%;
-  margin-top: 20px;
+   margin-top: 20px;
   }
 
   .form-input{
@@ -33,4 +33,16 @@
 
   .hidden{
     margin-left: 74px;
+  }
+
+  .title-select{
+    height: 30px;
+  }
+
+  .form-image{
+    margin-top: 20px;
+  }
+
+  .form-pin-name{
+    margin-left: 50px;
   }

@@ -34,8 +34,7 @@ ActiveRecord::Schema.define(version: 2020_11_03_025804) do
   end
 
   create_table "pins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name"
-    t.text "url"
+    t.integer "title_id", null: false
     t.bigint "prefecture_id"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
