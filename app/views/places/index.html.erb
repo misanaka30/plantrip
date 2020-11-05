@@ -1,25 +1,19 @@
-<%= link_to "pinを作成する", new_prefecture_pin_path%>
-<div class="pins">
- <% @pins.each do |pin| %>
-    <div class ="pin-name">
-      <%= link_to pin.name, pin.url%>
-      <%= image_tag pin.image.variant(resize: '300x300'), class: 'pin-image' if pin.image.attached? %>
-    </div>
-  <% end %>
-</div>
+<body>
+ <div class= "place-bord">
+    <div class ="place-btn">
+    <%= link_to image_tag('add.png',width: 40), new_prefecture_place_path, class: "pin-create" %>
+   </div>
 
+   <div class="places">
+     <% @places.each do |place| %>
+      <div class="place">
+       <%= place.user.name %>:<%= link_to place.name, place.url , class: "place-url"%>
+      </div>
+     <% end %>
+   </div>
+  </div>
+</body>
 
-
-
-<%= link_to "行先を作成する", new_prefecture_place_path%>
-<div class="places">
- <% @places.each do |place| %>
-    <div class="place-user">
-      <%= place.user.name %>
-    </div>
-    <div class ="place-name">
-      <%= link_to place.name, place.url%>
-    </div>
-     <%= image_tag place.image.variant(resize: '300x300'), class: 'place-image' if place.image.attached? %>
-  <% end %>
-</div>
+<footer>
+ <%= render partial: "pin"%>
+</footer>

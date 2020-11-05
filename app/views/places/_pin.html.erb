@@ -1,0 +1,17 @@
+<div class = "pin-bord">
+   <div class= "pin-btn">
+     <%= link_to image_tag('add.png',width: 40), new_prefecture_pin_path, class: "pin-create" %>
+   </div>
+
+ <div class= "pins">
+   <% @pins.each do |pin| %>
+     <div class="pin-name">
+      <div class = "pinpng">
+      <%= image_tag("pin.png", width: 20 ) %>
+      </div>
+      <%= pin.name %>
+      <%= image_tag pin.image, class: 'pin-image' if pin.image.attached? %>
+     </div>
+   <% end %>
+</div >
+</div>

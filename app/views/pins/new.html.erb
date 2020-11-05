@@ -1,11 +1,25 @@
-<%= form_with model: [@prefecture, @pin], class: 'form', local: true do |f| %>
+<div class = "new-pin-form">
+  <h1>新規　確定事項</h1>
+  <%= form_with model: [@prefecture, @pin], class: 'form', local: true do |f| %>
   <div class="form-input">
+   <div class ="pin-form-name">
+    <div class='pin-form-left'>
+     <%= f.label :確定事項 , class: 'form--place-left'%>
+     </div>
+
+    <div class="form-pin-name">
     <%= f.text_field :name, class: 'form-pin', placeholder: 'タイトルを入力してください' %>
-    <%= f.text_field :url, class: 'form-url', placeholder: 'URLを入力してください' %>
-  </div>
-  <label class="form-image">
+    </div>
+   </div>
+   
+    <label class="form-image">
       <span class="image-file">画像</span>
       <%= f.file_field :image, class: 'hidden' %>
     </label>
-  <%= f.submit '送信', class: 'form-submit' %>
-<% end %>
+  
+    <div class = "pin-form-submit">
+     <%= f.submit  class: 'pin-submit' %>
+    </div>
+  <% end %>
+
+</div>

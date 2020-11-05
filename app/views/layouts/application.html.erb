@@ -4,12 +4,20 @@
     <title>Plantrip</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-　　<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <div class = "header">
+    <div class = "title">
+      <%= link_to "Plantrip" , root_path, class: "title" %>
+    </div>
+    <div class = "user-name">
+      <%= link_to current_user.name, edit_user_path(current_user) , class: "user-name"%>
+    </div>
+  </div>
     <%= yield %>
-  </body>
+   </body>
 </html>
