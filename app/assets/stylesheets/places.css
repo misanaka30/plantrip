@@ -1,0 +1,131 @@
+.pin-bord{
+  background-color: rgb(135, 164, 182);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: calc(100vh - 60vh);
+  position: relative;
+}
+
+.pin-btn{
+  position: absolute;
+  left: 20px;
+  top: 10px
+}
+
+.pins{
+  display: flex;
+}
+
+.pin-image{
+  height: 50px;
+  width: 50px;
+}
+
+.pin-name{
+  background-color: gainsboro;
+  height: 130px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 40px 40px 10px;
+}
+.pinpng{
+  margin: 3px 0 8px 0;
+}
+
+
+
+
+
+.place-bord{
+  height: 60vh;
+  position: relative;
+}
+
+.place-image{
+  height: 80px;
+  width: 80px;
+}
+
+.place-btn{
+position: absolute;
+left: 20px;
+top: 10px
+}
+
+.places{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.place{
+ height: 50px;
+ width: 300px;
+ background-color: rgb(221, 241, 235);
+ border: 3px solid rgb(1, 34, 34);
+ margin: 10px;
+ padding-left: 20px;
+ padding-top: 10px;
+ 
+}
+
+.place-url{
+  text-decoration: none;
+  padding-left: 20px;
+  color: rgb(83, 65, 65);
+}
+
+.new-place-form{
+width: 980px;
+margin: 60px auto;
+padding: 40px;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+.place-form-name{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.place-form-url{
+  display: flex;
+}
+
+.place-form-left{
+  float: left;
+  
+}
+
+.form-place{
+  width: 300px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+.form-url{
+  width: 60%;
+  height: 30px;
+  margin-left: 44px;
+}
+
+.form-submit{
+  background-color: #38aef0;
+  border: gray;
+  padding: 15px;
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+
+.form-input{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}

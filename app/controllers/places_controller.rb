@@ -25,7 +25,7 @@ class PlacesController < ApplicationController
   private
 
   def place_params
-    params.require(:place).permit(:name, :url, :image ).merge(user_id: current_user.id)
+    params.require(:place).permit(:name, :url ).merge(user_id: current_user.id)
   end
  
 end

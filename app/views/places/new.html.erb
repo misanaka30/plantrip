@@ -1,11 +1,29 @@
-<%= form_with model: [@prefecture, @place], class: 'form', local: true do |f| %>
-  <div class="form-input">
-    <%= f.text_field :name, class: 'form-place', placeholder: '行先名を入力してください' %>
-    <%= f.text_field :url, class: 'form-url', placeholder: 'URLを入力してください' %>
-  </div>
-  <label class="form-image">
-      <span class="image-file">画像</span>
-      <%= f.file_field :image, class: 'hidden' %>
-    </label>
-  <%= f.submit '送信', class: 'form-submit' %>
-<% end %>
+ <div class = "new-place-form">
+   <h1>新規 行きたい場所</h1>
+
+   <%= form_with model: [@prefecture, @place], class: 'form', local: true do |f| %>
+     <div class="form-input">
+       <div class='place-form-name'>
+          <div class='place-form-left'>
+           <%= f.label :行きたい場所の名称 , class: 'form--place-left'%>
+          </div>
+          <div class='place-form-right'>
+           <%= f.text_field :name, class: 'form-place', placeholder: '行先名を入力してください' %>
+          </div>
+       </div>
+
+       <div class= "palce-form-url">
+          <div class='place-form-left'>
+           <%= f.label :行きたい場所のURL , class: 'form-url-left'%>
+          </div>
+          <div class='place-form-right'>
+            <%= f.text_field :url, class: 'form-url', placeholder: 'URLを入力してください' %>
+          </div>
+        </div>
+
+        <div class= "place-form-submit">
+         <%= f.submit class: 'form-submit' %>
+        </div>
+     </div>
+   <% end %>
+</div>

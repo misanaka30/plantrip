@@ -1,0 +1,36 @@
+.new-pin-form{
+  width: 980px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  }
+
+  .pin-submit{
+   background-color:#38aef0;
+   border: gray;
+   padding: 15px;
+   margin-left: 40%;
+  margin-top: 20px;
+  }
+
+  .form-input{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pin-form-name{
+    display: flex;
+  }
+
+  .form-pin{
+   height: 30px;
+   margin-left: 44px;
+   margin-bottom: 30px;
+  }
+
+  .hidden{
+    margin-left: 74px;
+  }

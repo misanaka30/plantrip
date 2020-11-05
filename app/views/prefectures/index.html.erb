@@ -1,18 +1,13 @@
-<div class="prefecture-header">
-  <div class="header-name">
-    <%= link_to current_user.name, edit_user_path(current_user) %>
-  </div>
-  <div class="create-prefecture">
-   <%= link_to "旅行フォルダを作成する", new_prefecture_path %>
-  </div>
+<div class='prefecture-btn'>
+     <%= link_to image_tag('add.png',width: 50) , new_prefecture_path %>
 </div>
+
 <div class = "prefectures">
-  <% current_user.prefectures.each do |prefecture| %>
-    <div class="prefecture">
+   <% current_user.prefectures.each do |prefecture| %>
       <div class="prefecture-name">
-       <%= link_to prefecture.name, prefecture_places_path(prefecture)%>
+       <%= link_to image_tag('bag.png',width: 80), prefecture_places_path(prefecture), class: "prefecture-bag" %>
+       <%= link_to prefecture.name, prefecture_places_path(prefecture), class: "prefecture-title"%>
       </div>
-    </div>
   <% end %>
 </div>
 
