@@ -10,6 +10,7 @@
       <%= image_tag("pin.png", width: 20 ) %>
       </div>
       <%= pin.title.name %>
+      <%= image_tag pin.image :'data-lightbox' %>
       <%= image_tag pin.image, class: 'pin-image' if pin.image.attached? %>
      </div>
    <% end %>
