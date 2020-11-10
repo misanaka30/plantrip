@@ -15,6 +15,12 @@ class PrefecturesController < ApplicationController
    end
   end
 
+  def destroy
+    prefecture = Prefecture.find(params[:id])
+    prefecture.destroy
+    redirect_to root_path
+  end
+
 
   private
 
