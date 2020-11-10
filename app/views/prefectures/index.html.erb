@@ -7,6 +7,9 @@
       <div class="prefecture-name">
        <%= link_to image_tag('bag.png',width: 80), prefecture_places_path(prefecture), class: "prefecture-bag" %>
        <%= link_to prefecture.name, prefecture_places_path(prefecture), class: "prefecture-title"%>
+       <div class = "trash">
+       <%= link_to image_tag('trash.png', width: 20), prefecture_path(prefecture), method: :delete %>
+      </div>
       </div>
   <% end %>
 </div>

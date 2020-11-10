@@ -7,7 +7,12 @@
    <div class="places">
      <% @places.each do |place| %>
       <div class="place">
-       <%= place.user.name %>:<%= link_to place.name, place.url , class: "place-url"%>
+        <div class = "place-name">
+         <%= place.user.name %>:<%= link_to place.name, place.url , class: "place-url"%>
+        </div>
+        <div class= "trash-btn">
+         <%= link_to image_tag('trash.png', width: 20), prefecture_place_path(@prefecture, place), method: :delete %>
+        </div>
       </div>
      <% end %>
    </div>

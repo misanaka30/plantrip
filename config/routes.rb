@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: "prefectures#index"
   resources :users, only: [:edit, :update]
   resources :prefectures, only: [:new, :create, :destroy] do
-    resources :places, only: [:index, :new, :create]
-    resources :pins,   only: [:new, :create]
+    resources :places, only: [:index, :new, :create, :destroy]
+    resources :pins,   only: [:new, :create, :destroy]
   end
 end
