@@ -70,7 +70,7 @@ top: 10px
  width: 400px;
  background-color: rgb(221, 241, 235);
  border: 3px solid rgb(2, 46, 46);
- margin: 20px 20px 10px 70px;
+ margin: 20px 20px 10px 20px;
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -141,3 +141,18 @@ box-sizing: border-box;
   flex-direction: column;
 }
 
+.btns{
+  display: flex;
+  align-items: center;
+}
+.up{
+  width: 30px;
+  height: 30px;
+  margin-left: 50px;
+  border: 1px solid rgb(2, 46, 46);
+}
+.down{
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(2, 46, 46);
+}
