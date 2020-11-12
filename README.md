@@ -31,10 +31,12 @@ password: 111111
 ・飛行機のチケットや新幹線の時間をすぐに確認したい    
 
 # 洗い出した要件
-
+https://docs.google.com/spreadsheets/d/10CIR_5p2SSRUovqYVG0V0eX0ZfCDpGN9o6T-CCg10SM/edit?usp=sharing
 # 実装した機能についてのGIFと説明
 
 # 実装予定の機能
+・画像拡大機能  
+・要素の並び替え機能
 
 # テーブル設計
 ## users テーブル
