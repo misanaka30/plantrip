@@ -1,5 +1,6 @@
 <div class = "pin-bord">
    <div class= "pin-btn">
+   <div class= explain>ホテル・乗り物など確定事項を投稿</div>
      <%= link_to image_tag('add.png',width: 40), new_prefecture_pin_path, class: "pin-create" %>
    </div>
 
@@ -15,6 +16,9 @@
       <div class = "trashpng">
       <%= link_to image_tag('trash.png', width: 20), prefecture_pin_path(@prefecture, pin), method: :delete %>
       </div>
+  <%= link_to pin.image.url, 'data-lightbox': pin.image do %>
+  <%= image_tag pin.image.url if pin.image? %>
+<% end %>
      </div>
    <% end %>
 </div >

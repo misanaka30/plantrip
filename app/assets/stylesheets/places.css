@@ -156,3 +156,7 @@ box-sizing: border-box;
   height: 30px;
   border: 1px solid rgb(2, 46, 46);
 }
+
+.explain{
+  font-size:20px;
+}

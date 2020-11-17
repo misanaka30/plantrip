@@ -25,6 +25,6 @@ class PrefecturesController < ApplicationController
   private
 
    def prefecture_params
-    params.require(:prefecture).permit(:name, user_ids: [])
+    params.require(:prefecture).permit(:name,  user_ids: [])
    end
 end
